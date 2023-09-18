@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // exercise 3
+      let word1 = "Pakistani";
+
+      alert(`String: ${word1} \nIndex of 'n': ${word1.indexOf("n")}`);
+
+      // exercise 4
+      let word3 = "Hello World";
+
+      alert(`String: ${word3} \nLast Index of 'l': ${word3.lastIndexOf("l")}`);
+
+      // exercise 5
+
+      let word2 = "Pakistani";
+
+      alert(`String: ${word2} \nCharacter at index 3: ${word2.charAt(3)}`);
+
+      // exercise no 6
+
+      let firstName = prompt("whats your first name");
+      let lastName = prompt("whats your last name");
+
+      alert(firstName.concat(" ", lastName));
+
+      // exercise 7
+
+      let word4 = "Hyderabad";
+
+      alert(
+        `String: ${word4} \nAfter replacemnet: ${word4.replace(
+          "Hyder",
+          "Isalm"
+        )}`
+      );
+
+      // exercise 8
+
+      let sentence =
+        "Ali and Sami are best friends. They play cricket and football together";
+
+      alert(
+        `Before: ${sentence} \nAfter replaceing all (and): ${sentence.replaceAll(
+          "and",
+          "&"
+        )}`
+      );
+
+      // exercise 9
+
+      let string = "472";
+
+      alert(
+        `value: ${string} \nType: ${typeof string}\nvalue: ${string}\nType: ${typeof parseInt(
+          string
+        )}`
+      );
+    </script>
+  </body>
+</html>

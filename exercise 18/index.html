@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // exercise 17
+
+      let word = prompt("write a word");
+
+      alert(
+        `User input: ${word}\nLast character of input: ${word.charAt(
+          word.length - 1
+        )}`
+      );
+
+      //   exercise 18
+
+      let str = "The quick brown fox The jumps over the the lazy dog";
+      let counter = 0;
+      // let strArr = str.split(" ");
+
+      for (let i = 0; i < str.length; i++) {
+        // if (strArr[i] === "the" || strArr[i] === "The") {
+        //   counter++;
+        // }
+        if (str.slice(i, i + 3) === "the" || str.slice(i, i + 3) === "The") {
+          counter++;
+        }
+      }
+
+      alert(`Text: ${str}\nThere are ${counter} occurrence(s) of word 'the'`);
+    </script>
+  </body>
+</html>

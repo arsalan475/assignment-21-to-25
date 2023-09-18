@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let password = prompt("create a password");
+
+      let isOneNum = false;
+      let ischar = false;
+      let isFirstNoNum = false;
+      let isSixCharLong = false;
+
+      for (var i = 0; i < 1; i++) {
+        for (var j = 0; j < password.length; j++) {
+          if (
+            (password[j] >= "a" && password[j] <= "z") ||
+            (password[j] >= "A" && password[j] <= "Z")
+          ) {
+            ischar = true;
+          }
+
+          if (isNaN(Number(password[0]))) isFirstNoNum = true;
+
+          if (!isNaN(Number(password[j]))) isOneNum = true;
+        }
+        if (password.length >= 6) isSixCharLong = true;
+        if (isOneNum && ischar && isFirstNoNum && isSixCharLong)
+          alert("aweosome password is perfect");
+
+        if (isOneNum === false) alert("Must be one Number in Password");
+        if (isFirstNoNum === false)
+          alert(
+            `Entered password: ${password}\nPassword can not begin with a Number\nPlease enter a valid password`
+          );
+        if (ischar === false) alert("Must be one character in password");
+
+        if (isSixCharLong === false) alert("Password Must be 6 character Long");
+        //  console.log(isOneNum,ischar,isFirstNoNum)
+      }
+    </script>
+  </body>
+</html>

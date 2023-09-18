@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // exercise 13
+      let userName = prompt("Write a user user name");
+      let invail = "!,.@";
+      for (let i = 0; i < userName.length; i++) {
+        if (userName.includes(invail[i])) alert("Invalid user name");
+      }
+
+      //   exercise 14
+
+      let bakery = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+      let searchbox = prompt("wellcome to Abc bakery").toLowerCase();
+
+      if (bakery.indexOf(searchbox) === -1) {
+        alert(`We are sorry. ${searchbox} is not available in our bakery`);
+      } else {
+        alert(
+          `${searchbox} is available at index ${bakery.indexOf(
+            searchbox
+          )} in our bakery`
+        );
+      }
+    </script>
+  </body>
+</html>
